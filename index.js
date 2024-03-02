@@ -31,7 +31,7 @@ app.post("/api/add", async (req, res) => {
   }
 });
 
-app.put("/api/update", async (req, res) => {
+app.post("/api/update", async (req, res) => {
   try {
     const { content, _id } = req.body;
     if (!_id) {
